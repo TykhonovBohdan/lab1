@@ -38,7 +38,7 @@ void printFormattedFloat()
 void addFloats()
 {
   float a = 3.5, b = 2.7;
-  printf("%.3f\n", a + b);
+  printf("%.2f\n", a + b);
 }
 
 void convertTemperature()
@@ -55,10 +55,10 @@ void checkEvenOdd()
   int num;
   printf("Введіть число: ");
   scanf("%d", &num);
-  if (num % 2 == 0)
-    printf("Парне\n");
-  else
+  if (num % 2)
     printf("Непарне\n");
+  else
+    printf("Парне\n");
 }
 
 void compareNumbers()
